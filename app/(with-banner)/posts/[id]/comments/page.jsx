@@ -1,6 +1,7 @@
 const fetchComments = async (id) => {
   await new Promise((resolve) => setTimeout(resolve, 5000));
-  throw new Error("Error fetching comments");
+
+  // throw new Error("Error fetching comments");
 
   const res = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${id}/comments`,
